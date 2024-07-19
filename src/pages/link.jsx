@@ -76,11 +76,11 @@ const Link = () => {
         <div className="flex flex-col items-start gap-8 rounded-lg sm:w-2/5">
           <span className="text-6xl font-extrabold hover:underline cursor-pointer">{url?.title}</span>
           <a
-            href={`${import.meta.env.VITE_APP_BASE_URL+link}`}
+            href={`https://shortscan.site/${link}`}
             target="_blank"
             className="text-3xl sm:text-4xl text-blue-400 font-bold hover:underline cursor-pointer"
           >
-            {import.meta.env.VITE_APP_BASE_URL+link}
+            {`https://shortscan.site/${link}`}
           </a>
           <a
             href={url?.original_url}
@@ -97,7 +97,7 @@ const Link = () => {
             <Button
               variant="ghost"
               onClick={() =>
-                window.navigator.clipboard.writeText(`${import.meta.env.VITE_APP_BASE_URL+link}`)
+                window.navigator.clipboard.writeText(`https://shortscan.site/${link}}`)
               }
             >
               <Copy />

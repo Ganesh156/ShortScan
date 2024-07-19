@@ -36,7 +36,7 @@ const LinkCard = ({url, fetchUrls}) => {
                 {url?.title}
             </span>
             <span className="text-2xl text-blue-400 font-bold hover:underline cursor-pointer">
-                ${import.meta.env.VITE_APP_BASE_URL}{url?.custom_url ? url?.custom_url : url.short_url}
+                https://shortscan.site/{url?.custom_url ? url?.custom_url : url.short_url}
             </span>
             <span className="flex items-center gap-1 hover:underline cursor-pointer">
             <LinkIcon className="p-1" />
@@ -49,7 +49,7 @@ const LinkCard = ({url, fetchUrls}) => {
         <div className="flex gap-2">
             <Button
             variant="ghost"
-            onClick={()=>window.navigator.clipboard.writeText(`${import.meta.env.VITE_APP_BASE_URL+url?.short_url}`)}
+            onClick={()=>window.navigator.clipboard.writeText(`https://shortscan.site/${url?.short_url}`)}
             >
                 <Copy/>
             </Button>
