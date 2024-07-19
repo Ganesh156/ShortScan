@@ -20,7 +20,8 @@ const Header = () => {
     <>
         <nav className="py-4 flex justify-between items-center">
             <Link to='/'>
-                <img src="/logo.png" className="h-16" alt="Trimmer logo"/>
+                {/* <img src="/logo.png" className="h-16" alt="Trimmer logo"/> */}
+                <h1 className='text-3xl sm:text-5xl lg:text-4xl text-white text-center font-extrabold'>ShortScan</h1>
             </Link>
             <div>
             {
